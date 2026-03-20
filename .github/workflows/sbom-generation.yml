@@ -35,7 +35,7 @@ jobs:
           sudo apt-get update -qq > /dev/null 2>&1
           sudo apt-get install -y -qq curl unzip jq git > /dev/null 2>&1
           echo "📦 Installing cdxgen..."
-          npm install -g @cyclonedx/cdxgen --silent 2>/dev/null
+          npm install -g @cyclonedx/cdxgen@12.1.2 --silent 2>/dev/null
           echo "🛡️ Installing grype..."
           curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin > /dev/null 2>&1
           echo "✅ Tools ready: cdxgen $(cdxgen --version 2>/dev/null | head -1), grype $(grype version 2>&1 | grep -m1 'Version' || echo 'ok')"
