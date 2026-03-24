@@ -1,4 +1,4 @@
-# MassTransit
+#    MassTransit
 
 MassTransit provides a developer-focused, modern platform for creating distributed applications without complexity.
 
